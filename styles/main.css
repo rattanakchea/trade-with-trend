@@ -1,0 +1,36 @@
+/*! CSS Used fontfaces */
+@font-face {
+  font-family: silkabold;
+  src: url(./silka.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.logo {
+  /* font-size: clamp(1rem, 3.2vw + 2rem, 4rem); */
+  /* min-height: 0vh; */
+  font-family: silkabold;
+  text-align: center;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  /* margin: 32px; */
+  /* background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 57%, rgb(0, 212, 255) 100%) text rgb(2, 0, 36); */
+  background: linear-gradient(#26ee03, #f40420);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+nav.navbar {
+  color: black;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* li.nav-item {
+  a.nav-link {
+    padding: 0.5rem;
+
+    &:hover {
+      color: black;
+    }
+  }
+} */
