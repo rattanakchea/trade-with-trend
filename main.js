@@ -1,7 +1,19 @@
 
 showTime();
-includeHTML();
+const date = getDate();
+document.getElementById("today").innerHTML = date;
+// includeHTML();
 
+
+function getDate() {
+    const date = new Date();
+    // get the date as a string
+    const n = date.toDateString();
+    // get the time as a string
+    const time = date.toLocaleTimeString();
+    // display date
+    return ('Date: ' + n);
+}
 
 function showTime() {
     var date = new Date();
@@ -27,8 +39,23 @@ function showTime() {
     document.getElementById("MyClockDisplay").innerText = time;
     document.getElementById("MyClockDisplay").textContent = time;
     setTimeout(showTime, 1000);
-
 }
+
+// localstorage TextArea
+const storageKeys = ['textarea-rules', 'textarea-plan', 'textarea-alert']
+
+storageKeys.forEach(key => {
+    const textArea = document.getElementById(key)
+
+    const text = localStorage.getItem(key);
+    if (text) {
+        textArea.innerHTML = text;
+    }
+
+    textArea.addEventListener('input', () => {
+        localStorage.setItem(key, textArea.value);
+    });
+})
 
 
 function includeHTML() {

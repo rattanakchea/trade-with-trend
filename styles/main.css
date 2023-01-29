@@ -26,10 +26,6 @@ nav.navbar {
 }
 
 .clock {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
   /* color: #17d4fe; */
   font-size: 1.3rem;
   font-family: Orbitron;
@@ -42,5 +38,10 @@ nav.navbar {
 
 .row1 {
   height: 400px;
-  max-height: 500px;
+  max-height: 600px;
+  overflow: auto;
+}
+
+textarea {
+  font-size: 0.9rem !important;
 }

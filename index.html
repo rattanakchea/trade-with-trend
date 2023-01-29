@@ -22,7 +22,12 @@
                 </a>
             </div>
 
-            <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+            <div>
+                <div id="today"></div>
+                <div id="MyClockDisplay" class="clock" onload="showTime()">
+                </div>
+            </div>
+
             <div>
 
                 Market hour 6:30AM - 1PM (PST)
@@ -45,7 +50,7 @@
     <div class="wrapper">
 
         <div class="row row1 border-bottom">
-            <div class="col">
+            <div class="col-3">
                 <div class="tradingview-widget-container">
                     <div class="tradingview-widget-container__widget"></div>
                     <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener"
@@ -183,7 +188,28 @@
                 </div>
 
             </div>
+
+            <!-- Day Trade Rules -->
+            <div class="col-4">
+                <div class="mb-3">
+                    <label class="form-label fw-bold text-warning bg-dark">Rules</label>
+                    <textarea class="form-control" id="textarea-rules" rows="20"></textarea>
+                </div>
+
+            </div>
+
             <div class="col">
+                <div class="mb-3">
+                    <label class="form-label">Plan</label>
+                    <textarea class="form-control" id="textarea-plan" rows="20"></textarea>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <label class="form-label">Alert</label>
+                    <textarea class="form-control" id="textarea-alert" rows="20"></textarea>
+                </div>
 
             </div>
         </div>
