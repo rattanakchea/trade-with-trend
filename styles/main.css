@@ -37,8 +37,14 @@ nav.navbar {
 }
 
 .row1 {
-  height: 400px;
+  height: 450px;
   max-height: 600px;
+  overflow: auto;
+}
+
+.row2 {
+  height: 600px;
+  max-height: 700px;
   overflow: auto;
 }
 

@@ -4,6 +4,7 @@
 
 - Market Overview: https://www.tradingview.com/widget/market-overview/
 - 
+- Advanced Chart, Technical indicators, Watchlist: https://www.tradingview.com/widget/advanced-chart/
 
 ## Source
 
