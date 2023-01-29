@@ -25,12 +25,11 @@ nav.navbar {
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
 
-/* li.nav-item {
-  a.nav-link {
-    padding: 0.5rem;
+.wrapper {
+  padding-right: 2rem;
+}
 
-    &:hover {
-      color: black;
-    }
-  }
-} */
+.row1 {
+  height: 400px;
+  max-height: 500px;
+}

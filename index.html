@@ -13,7 +13,7 @@
 
 <body>
 
-    <nav class="navbar navbar-dark navbar-expand-lg portfolio-navbar">
+    <nav class="navbar navbar-dark navbar-expand-lg">
         <div class="container d-flex flex-wrap justify-content-md-between justify-content-around">
 
             <div class="logo">
@@ -22,7 +22,15 @@
                 </a>
             </div>
 
-            <ul class="nav d-flex justify-content-around justify-content-md-end" style="flex: 1 0 350px">
+            <div>
+                Date and Time
+            </div>
+
+            <div>
+                Time to Market Close
+            </div>
+
+            <!-- <ul class="nav d-flex justify-content-around justify-content-md-end" style="flex: 1 0 350px">
                 <li class="nav-item" role="presentation">
                     <a class="nav-link" routerLink="/projects">Projects</a>
                 </li>
@@ -32,14 +40,179 @@
                 <li class="nav-item" role="presentation">
                     <a class="nav-link" routerLink="/web-resources">Resources</a>
                 </li>
-            </ul>
+            </ul> -->
         </div>
     </nav>
+
+    <div class="wrapper">
+
+        <div class="row row1">
+            <div class="col">
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener"
+                            target="_blank"><span class="blue-text">World markets</span></a> by TradingView</div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js"
+                        async>
+                            {
+                                "colorTheme": "light",
+                                    "dateRange": "12M",
+                                        "showChart": true,
+                                            "locale": "en",
+                                                "largeChartUrl": "",
+                                                    "isTransparent": false,
+                                                        "showSymbolLogo": true,
+                                                            "showFloatingTooltip": false,
+                                                                "width": "400",
+                                                                    "height": "660",
+                                                                        "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+                                                                            "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+                                                                                "gridLineColor": "rgba(240, 243, 250, 0)",
+                                                                                    "scaleFontColor": "rgba(106, 109, 120, 1)",
+                                                                                        "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+                                                                                            "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+                                                                                                "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+                                                                                                    "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+                                                                                                        "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+                                                                                                            "tabs": [
+                                                                                                                {
+                                                                                                                    "title": "Indices",
+                                                                                                                    "symbols": [
+                                                                                                                        {
+                                                                                                                            "s": "FOREXCOM:SPXUSD",
+                                                                                                                            "d": "S&P 500"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "s": "FOREXCOM:NSXUSD",
+                                                                                                                            "d": "US 100"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "s": "FOREXCOM:DJI",
+                                                                                                                            "d": "Dow 30"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "s": "INDEX:NKY",
+                                                                                                                            "d": "Nikkei 225"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "s": "INDEX:DEU40",
+                                                                                                                            "d": "DAX Index"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "s": "FOREXCOM:UKXGBP",
+                                                                                                                            "d": "UK 100"
+                                                                                                                        }
+                                                                                                                    ],
+                                                                                                                    "originalTitle": "Indices"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "title": "Futures",
+                                                                                                                    "symbols": [
+                                                                                                                        {
+                                                                                                                            "s": "CME_MINI:ES1!",
+                                                                                                                            "d": "S&P 500"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "s": "CME:6E1!",
+                                                                                                                            "d": "Euro"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "s": "COMEX:GC1!",
+                                                                                                                            "d": "Gold"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "s": "NYMEX:CL1!",
+                                                                                                                            "d": "Crude Oil"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "s": "NYMEX:NG1!",
+                                                                                                                            "d": "Natural Gas"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "s": "CBOT:ZC1!",
+                                                                                                                            "d": "Corn"
+                                                                                                                        }
+                                                                                                                    ],
+                                                                                                                    "originalTitle": "Futures"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "title": "Bonds",
+                                                                                                                    "symbols": [
+                                                                                                                        {
+                                                                                                                            "s": "CME:GE1!",
+                                                                                                                            "d": "Eurodollar"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "s": "CBOT:ZB1!",
+                                                                                                                            "d": "T-Bond"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "s": "CBOT:UB1!",
+                                                                                                                            "d": "Ultra T-Bond"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "s": "EUREX:FGBL1!",
+                                                                                                                            "d": "Euro Bund"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "s": "EUREX:FBTP1!",
+                                                                                                                            "d": "Euro BTP"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "s": "EUREX:FGBM1!",
+                                                                                                                            "d": "Euro BOBL"
+                                                                                                                        }
+                                                                                                                    ],
+                                                                                                                    "originalTitle": "Bonds"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "title": "Forex",
+                                                                                                                    "symbols": [
+                                                                                                                        {
+                                                                                                                            "s": "FX:EURUSD",
+                                                                                                                            "d": "EUR/USD"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "s": "FX:GBPUSD",
+                                                                                                                            "d": "GBP/USD"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "s": "FX:USDJPY",
+                                                                                                                            "d": "USD/JPY"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "s": "FX:USDCHF",
+                                                                                                                            "d": "USD/CHF"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "s": "FX:AUDUSD",
+                                                                                                                            "d": "AUD/USD"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "s": "FX:USDCAD",
+                                                                                                                            "d": "USD/CAD"
+                                                                                                                        }
+                                                                                                                    ],
+                                                                                                                    "originalTitle": "Forex"
+                                                                                                                }
+                                                                                                            ]
+                            }
+                        </script>
+                </div>
+
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+
+    <!-- market -->
 
 </body>
 
