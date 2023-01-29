@@ -14,7 +14,7 @@
 <body>
 
     <nav class="navbar navbar-dark navbar-expand-lg">
-        <div class="container d-flex flex-wrap justify-content-md-between justify-content-around">
+        <div class="container-fluid d-flex flex-wrap justify-content-md-between justify-content-around">
 
             <div class="logo">
                 <a routerLink="/" style="text-decoration: none;">
@@ -29,7 +29,6 @@
             </div>
 
             <div>
-
                 Market hour 6:30AM - 1PM (PST)
             </div>
 
@@ -49,7 +48,7 @@
 
     <div class="wrapper">
 
-        <div class="row row1 border-bottom">
+        <div class="row row1 py-4 bg-light">
             <div class="col-3">
                 <div class="tradingview-widget-container">
                     <div class="tradingview-widget-container__widget"></div>
@@ -211,6 +210,86 @@
                     <textarea class="form-control" id="textarea-alert" rows="20"></textarea>
                 </div>
 
+            </div>
+        </div>
+
+        <div class="row row1 py-4 bg-dark-subtle">
+            <!-- Most Active Top Gainers -->
+            <div class="col-4">
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/stocks-usa/" rel="noopener"
+                            target="_blank"><span class="blue-text">Stocks today</span></a> by TradingView</div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
+                        {
+                            "colorTheme": "light",
+                                "dateRange": "1D",
+                                    "exchange": "US",
+                                        "showChart": true,
+                                            "locale": "en",
+                                                "width": "100%",
+                                                    "height": "100%",
+                                                        "largeChartUrl": "",
+                                                            "isTransparent": false,
+                                                                "showSymbolLogo": true,
+                                                                    "showFloatingTooltip": true,
+                                                                        "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+                                                                            "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+                                                                                "gridLineColor": "rgba(216, 216, 216, 0)",
+                                                                                    "scaleFontColor": "rgba(106, 109, 120, 1)",
+                                                                                        "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+                                                                                            "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+                                                                                                "belowLineFillColorGrowingBottom": "rgba(255, 152, 0, 0)",
+                                                                                                    "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+                                                                                                        "symbolActiveColor": "rgba(41, 98, 255, 0.12)"
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Watchlist -->
+            <div class="col">
+                <!-- WatchList -->
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div id="watchlist-chart-demo"></div>
+                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener"
+                            target="_blank"><span class="blue-text">AAPL stock chart</span></a> by TradingView</div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                    <script type="text/javascript">
+                        new TradingView.widget(
+                            {
+
+                                "container_id": "watchlist-chart-demo",
+                                "width": "100%",
+                                "height": "100%",
+                                "autosize": true,
+                                "symbol": "NASDAQ:AAPL",
+                                "interval": "D",
+                                "timezone": "exchange",
+                                "theme": "light",
+                                "style": "1",
+                                "toolbar_bg": "#f1f3f6",
+                                "withdateranges": true,
+                                "allow_symbol_change": true,
+                                "save_image": false,
+                                "watchlist": [
+                                    "SPY",
+                                    "AAPL",
+                                    "MSFT",
+                                    "NVDA",
+                                    "GOOGL",
+                                    "META",
+                                    "TSLA",
+                                    "BABA",
+                                    "GME",
+                                    "SHOP"
+                                ],
+                                "locale": "en"
+                            }
+                        );
+                    </script>
+                </div>
             </div>
         </div>
     </div>

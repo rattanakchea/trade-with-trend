@@ -8,11 +8,11 @@ document.getElementById("today").innerHTML = date;
 function getDate() {
     const date = new Date();
     // get the date as a string
-    const n = date.toDateString();
+    const dateString = date.toDateString();
     // get the time as a string
     const time = date.toLocaleTimeString();
     // display date
-    return ('Date: ' + n);
+    return dateString;
 }
 
 function showTime() {
