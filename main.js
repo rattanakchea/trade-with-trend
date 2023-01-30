@@ -42,7 +42,7 @@ function showTime() {
 }
 
 // localstorage TextArea
-const storageKeys = ['textarea-rules', 'textarea-plan', 'textarea-alert']
+const storageKeys = ['textarea-rules', 'textarea-plan', 'textarea-alert', 'textarea-rules2', 'textarea-plan2', 'textarea-alert2']
 
 storageKeys.forEach(key => {
     const textArea = document.getElementById(key)
